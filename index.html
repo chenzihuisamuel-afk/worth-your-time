@@ -4,40 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Worth Your Time</title>
-  <link rel="stylesheet" href="style.css?v=final1" />
+  <link rel="stylesheet" href="style.css?v=experience1" />
 </head>
 <body>
-  <div class="ambient"></div>
-  <div class="grain"></div>
+  <!--
+    If you're reading this in DevTools...
+    I had a feeling you might.
 
-  <main class="app">
+    DinnerProtocol initialized.
+    Objective: make you smile.
+  -->
+
+  <div class="gradient-orb orb-one"></div>
+  <div class="gradient-orb orb-two"></div>
+  <div class="stars" id="stars"></div>
+
+  <main class="shell">
     <section id="intro" class="panel active">
-      <div class="status">private invite initialized</div>
-      <h1>Hey.</h1>
-      <p class="hint">Tap anywhere to continue</p>
+      <p class="system-line">private invite initialized</p>
+      <h1 class="intro-title">Hey<span class="cursor">.</span></h1>
+      <p class="tap">Tap anywhere to continue</p>
     </section>
 
     <section id="invite" class="panel">
-      <div class="status">dinner proposal · awaiting response</div>
-
+      <p class="system-line">dinner proposal · awaiting response</p>
       <h1>Let's have dinner.</h1>
       <p class="subtitle">I think it'll be worth your time.</p>
 
-      <div class="button-row">
-        <button id="yesBtn" class="btn primary">Sure.</button>
-        <button id="noBtn" class="btn secondary">Nah.</button>
+      <div class="buttons">
+        <button id="yesBtn" class="btn yes">Sure.</button>
+        <button id="noBtn" class="btn no">Nah.</button>
       </div>
 
       <p id="replyText" class="reply"></p>
     </section>
 
     <section id="success" class="panel">
-      <div class="status">response accepted</div>
+      <p class="system-line success-line">response accepted</p>
+
+      <div class="celebration" aria-hidden="true">
+        <div class="plate">🍽️</div>
+        <div class="spark s1">✦</div>
+        <div class="spark s2">✧</div>
+        <div class="spark s3">✦</div>
+        <div class="spark s4">✧</div>
+        <div class="spark s5">✦</div>
+      </div>
+
       <h1>I knew you couldn't resist.</h1>
-      <p class="subtitle">See you soon. 🍽️</p>
+      <p class="subtitle">See you soon.</p>
     </section>
   </main>
 
-  <script src="script.js?v=final1"></script>
+  <script src="script.js?v=experience1"></script>
 </body>
 </html>

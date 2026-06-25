@@ -1,11 +1,11 @@
-Worth Your Time - final polished version
+Worth Your Time - Experience Edition
 
-Upload and replace these files in GitHub:
+Replace these files in your existing GitHub repository:
 - index.html
 - style.css
 - script.js
 
 Then commit changes.
 
-Your existing GitHub Pages link will update automatically.
-To force a fresh test, open your site with ?fresh=final at the end.
+After GitHub Pages finishes deploying, test with:
+https://chenzihuisamuel-afk.github.io/worth-your-time/?experience=1
