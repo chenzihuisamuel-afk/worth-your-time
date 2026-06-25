@@ -1,2 +1,8 @@
-Upload these files to a GitHub repository and enable GitHub Pages:
-Settings -> Pages -> Deploy from Branch -> main /root.
+Dinner invite site v3.
+
+Upload these files to your GitHub repository:
+- index.html
+- style.css
+- script.js
+
+Then commit changes. GitHub Pages will update automatically.
