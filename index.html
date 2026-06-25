@@ -4,33 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Worth Your Time</title>
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=final1" />
 </head>
 <body>
-  <div id="intro" class="screen active">
-    <h1>Hey.</h1>
-  </div>
+  <div class="ambient"></div>
+  <div class="grain"></div>
 
-  <div id="main" class="screen">
-    <h1>Let's have dinner.</h1>
-    <p>I think it'll be worth your time.</p>
+  <main class="app">
+    <section id="intro" class="panel active">
+      <div class="status">private invite initialized</div>
+      <h1>Hey.</h1>
+      <p class="hint">Tap anywhere to continue</p>
+    </section>
 
-    <div class="buttons">
-      <div class="button-slot">
-        <button id="yes">Sure.</button>
+    <section id="invite" class="panel">
+      <div class="status">dinner proposal · awaiting response</div>
+
+      <h1>Let's have dinner.</h1>
+      <p class="subtitle">I think it'll be worth your time.</p>
+
+      <div class="button-row">
+        <button id="yesBtn" class="btn primary">Sure.</button>
+        <button id="noBtn" class="btn secondary">Nah.</button>
       </div>
-      <div class="button-slot">
-        <button id="no">Nah.</button>
-      </div>
-    </div>
 
-    <p id="tease" class="tease"></p>
+      <p id="replyText" class="reply"></p>
+    </section>
 
-    <div id="success" class="hidden">
-      <h2>I knew you couldn't resist.</h2>
-    </div>
-  </div>
+    <section id="success" class="panel">
+      <div class="status">response accepted</div>
+      <h1>I knew you couldn't resist.</h1>
+      <p class="subtitle">See you soon. 🍽️</p>
+    </section>
+  </main>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=final1"></script>
 </body>
 </html>
