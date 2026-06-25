@@ -1,0 +1,44 @@
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(135deg,#111,#1f2937);
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+.screen{
+display:none;
+text-align:center;
+animation:fade .8s ease;
+}
+.active{display:block;}
+h1{font-size:3rem;margin-bottom:.5rem;}
+p{opacity:.8;font-size:1.2rem;}
+.buttons{margin-top:40px;}
+button{
+padding:14px 28px;
+font-size:18px;
+border:none;
+border-radius:999px;
+cursor:pointer;
+margin:0 10px;
+transition:.2s;
+}
+#yes{
+background:#fff;
+color:#111;
+}
+#yes:hover{transform:scale(1.06);}
+#no{
+background:#444;
+color:#fff;
+position:relative;
+}
+.hidden{display:none;}
+@keyframes fade{
+from{opacity:0;transform:translateY(15px);}
+to{opacity:1;transform:translateY(0);}
+}
