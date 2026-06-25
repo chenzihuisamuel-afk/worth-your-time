@@ -1,6 +1,6 @@
-Dinner invite site v3.
+Dinner invite site v4 fixed.
 
-Upload these files to your GitHub repository:
+Upload and replace:
 - index.html
 - style.css
 - script.js

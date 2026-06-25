@@ -19,20 +19,27 @@ const noReplies = [
   "Guess there's only one option left."
 ];
 
-const noScales = [0.9, 0.8, 0.7, 0.6, 0.45, 0];
-const yesScales = [1.05, 1.12, 1.2, 1.3, 1.45, 1.6];
+const noSizes = [
+  { width: 100, height: 44, font: 17 },
+  { width: 88, height: 40, font: 16 },
+  { width: 76, height: 36, font: 15 },
+  { width: 62, height: 32, font: 14 },
+  { width: 45, height: 26, font: 12 },
+  { width: 0, height: 0, font: 0 }
+];
 
 let noClicks = 0;
 
 no.addEventListener("click", () => {
   tease.textContent = noReplies[noClicks] || "Guess there's only one option left.";
 
-  yes.style.transform = `scale(${yesScales[noClicks] || 1.6})`;
-
   if (noClicks >= 5) {
     no.style.display = "none";
   } else {
-    no.style.transform = `scale(${noScales[noClicks]})`;
+    const size = noSizes[noClicks];
+    no.style.width = size.width + "px";
+    no.style.height = size.height + "px";
+    no.style.fontSize = size.font + "px";
     no.style.opacity = Math.max(0.25, 1 - (noClicks + 1) * 0.12);
   }
 

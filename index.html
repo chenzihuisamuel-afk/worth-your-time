@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Worth Your Time</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <div id="intro" class="screen active">
@@ -16,8 +16,12 @@
     <p>I think it'll be worth your time.</p>
 
     <div class="buttons">
-      <button id="yes">Sure.</button>
-      <button id="no">Nah.</button>
+      <div class="button-slot">
+        <button id="yes">Sure.</button>
+      </div>
+      <div class="button-slot">
+        <button id="no">Nah.</button>
+      </div>
     </div>
 
     <p id="tease" class="tease"></p>
@@ -27,6 +31,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>

@@ -33,25 +33,32 @@ p {
 
 .buttons {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.button-slot {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
-  padding: 14px 28px;
+  width: 110px;
+  height: 48px;
   font-size: 18px;
   border: none;
   border-radius: 999px;
   cursor: pointer;
-  margin: 0 10px;
-  transition: all 0.25s ease;
+  transition: width 0.25s ease, height 0.25s ease, font-size 0.25s ease, opacity 0.25s ease;
 }
 
 #yes {
   background: white;
   color: #111;
-}
-
-#yes:hover {
-  filter: brightness(0.95);
 }
 
 #no {
