@@ -3,59 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Worth Your Time</title>
-  <link rel="stylesheet" href="style.css?v=experience1" />
+  <title>The Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=invitation1" />
 </head>
 <body>
   <!--
-    If you're reading this in DevTools...
-    I had a feeling you might.
 
-    DinnerProtocol initialized.
-    Objective: make you smile.
+  Hi.
+
+  If you're reading this...
+
+  You probably couldn't resist opening DevTools.
+
+  Truth is, I had AI help me build this.
+
+  But every decision —
+  every sentence,
+  every colour,
+  every little detail —
+
+  was chosen because I wanted to make something I'd be proud to send you.
+
+  If you're still reading...
+
+  Thanks for taking the time.
+
+  I hope dinner is as enjoyable as debugging this website was.
+
+  - Samuel
+
   -->
 
-  <div class="gradient-orb orb-one"></div>
-  <div class="gradient-orb orb-two"></div>
-  <div class="stars" id="stars"></div>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="orb orb-three"></div>
+  <div id="stars" class="stars"></div>
 
-  <main class="shell">
-    <section id="intro" class="panel active">
-      <p class="system-line">private invite initialized</p>
-      <h1 class="intro-title">Hey<span class="cursor">.</span></h1>
-      <p class="tap">Tap anywhere to continue</p>
-    </section>
+  <main class="stage">
+    <section id="scene" class="scene active">
+      <p id="kicker" class="kicker"></p>
+      <h1 id="title" class="title"><span id="typed"></span><span class="cursor">|</span></h1>
+      <p id="subtitle" class="subtitle"></p>
 
-    <section id="invite" class="panel">
-      <p class="system-line">dinner proposal · awaiting response</p>
-      <h1>Let's have dinner.</h1>
-      <p class="subtitle">I think it'll be worth your time.</p>
-
-      <div class="buttons">
+      <div id="buttons" class="buttons hidden">
         <button id="yesBtn" class="btn yes">Sure.</button>
         <button id="noBtn" class="btn no">Nah.</button>
       </div>
 
-      <p id="replyText" class="reply"></p>
-    </section>
-
-    <section id="success" class="panel">
-      <p class="system-line success-line">response accepted</p>
-
-      <div class="celebration" aria-hidden="true">
-        <div class="plate">🍽️</div>
-        <div class="spark s1">✦</div>
-        <div class="spark s2">✧</div>
-        <div class="spark s3">✦</div>
-        <div class="spark s4">✧</div>
-        <div class="spark s5">✦</div>
-      </div>
-
-      <h1>I knew you couldn't resist.</h1>
-      <p class="subtitle">See you soon.</p>
+      <p id="reply" class="reply"></p>
+      <p id="tapHint" class="tap">Tap anywhere to continue</p>
     </section>
   </main>
 
-  <script src="script.js?v=experience1"></script>
+  <script src="script.js?v=invitation1"></script>
 </body>
 </html>
