@@ -1,4 +1,4 @@
-The Invitation
+The Invitation - rejection slides version
 
 Replace these files in your existing GitHub repository:
 - index.html
@@ -8,4 +8,4 @@ Replace these files in your existing GitHub repository:
 Then commit changes.
 
 Test link:
-https://chenzihuisamuel-afk.github.io/worth-your-time/?invitation=1
+https://chenzihuisamuel-afk.github.io/worth-your-time/?slides=1

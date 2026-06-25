@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=invitation1" />
+  <link rel="stylesheet" href="style.css?v=slides1" />
 </head>
 <body>
   <!--
@@ -45,7 +45,7 @@
   <main class="stage">
     <section id="scene" class="scene active">
       <p id="kicker" class="kicker"></p>
-      <h1 id="title" class="title"><span id="typed"></span><span class="cursor">|</span></h1>
+      <h1 id="title" class="title"><span id="typed"></span><span id="cursor" class="cursor">|</span></h1>
       <p id="subtitle" class="subtitle"></p>
 
       <div id="buttons" class="buttons hidden">
@@ -53,11 +53,14 @@
         <button id="noBtn" class="btn no">Nah.</button>
       </div>
 
-      <p id="reply" class="reply"></p>
+      <div id="singleAction" class="single-action hidden">
+        <button id="continueBtn" class="btn yes wide">Continue →</button>
+      </div>
+
       <p id="tapHint" class="tap">Tap anywhere to continue</p>
     </section>
   </main>
 
-  <script src="script.js?v=invitation1"></script>
+  <script src="script.js?v=slides1"></script>
 </body>
 </html>

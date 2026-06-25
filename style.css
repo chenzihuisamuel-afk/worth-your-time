@@ -9,7 +9,6 @@
   --line: rgba(255, 255, 255, 0.16);
   --glass: rgba(255, 255, 255, 0.075);
   --purple: #b892ff;
-  --deep-purple: #6d45d8;
 }
 
 body {
@@ -21,9 +20,9 @@ body {
   color: var(--text);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background:
-    radial-gradient(circle at 50% 5%, rgba(184, 146, 255, 0.24), transparent 34%),
-    radial-gradient(circle at 15% 75%, rgba(119, 76, 216, 0.30), transparent 30%),
-    radial-gradient(circle at 85% 72%, rgba(255, 120, 206, 0.14), transparent 30%),
+    radial-gradient(circle at 50% 5%, rgba(184, 146, 255, 0.28), transparent 34%),
+    radial-gradient(circle at 15% 75%, rgba(119, 76, 216, 0.34), transparent 30%),
+    radial-gradient(circle at 85% 72%, rgba(255, 120, 206, 0.16), transparent 30%),
     linear-gradient(135deg, #04050a, #101121 55%, #160f24);
 }
 
@@ -36,7 +35,7 @@ body::before {
     linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
   background-size: 100% 100%, 34px 34px, 34px 34px;
-  opacity: 0.42;
+  opacity: 0.45;
   animation: breathe 8s ease-in-out infinite alternate;
   pointer-events: none;
 }
@@ -45,7 +44,7 @@ body::before {
   position: fixed;
   border-radius: 50%;
   filter: blur(70px);
-  opacity: 0.46;
+  opacity: 0.48;
   pointer-events: none;
 }
 
@@ -131,7 +130,7 @@ body::before {
 }
 
 .title {
-  min-height: 92px;
+  min-height: 94px;
   margin: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 600;
@@ -143,7 +142,7 @@ body::before {
 .subtitle {
   min-height: 72px;
   margin: 24px auto 0;
-  max-width: 540px;
+  max-width: 560px;
   color: var(--muted);
   font-size: clamp(17px, 3.5vw, 22px);
   line-height: 1.55;
@@ -169,6 +168,10 @@ body::before {
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+.single-action {
+  margin-top: 40px;
 }
 
 .hidden {
@@ -198,6 +201,10 @@ body::before {
   transform: scale(0.97);
 }
 
+.wide {
+  width: 168px;
+}
+
 .yes {
   color: #08070d;
   background: #fbf7ff;
@@ -213,19 +220,6 @@ body::before {
   color: var(--text);
   background: rgba(255,255,255,0.10);
   border: 1px solid var(--line);
-}
-
-.reply {
-  min-height: 34px;
-  margin: 28px auto 0;
-  color: rgba(251,247,255,0.84);
-  font-size: 16px;
-  transition: opacity 180ms ease, transform 180ms ease;
-}
-
-.reply.swap {
-  opacity: 0;
-  transform: translateY(6px);
 }
 
 .celebration {
@@ -264,7 +258,7 @@ body::before {
 .s5 { top: 62px; left: 6px; animation-delay: .86s; }
 
 @keyframes blink { 50% { opacity: 0; } }
-@keyframes breathe { to { opacity: 0.72; transform: translateX(18px); } }
+@keyframes breathe { to { opacity: 0.74; transform: translateX(18px); } }
 @keyframes floatA { to { transform: translate(90px, 80px) scale(1.08); } }
 @keyframes floatB { to { transform: translate(-90px, -80px) scale(1.12); } }
 @keyframes floatC { to { transform: translate(-40px, -90px) scale(1.1); } }
@@ -302,5 +296,9 @@ body::before {
     width: 112px;
     height: 50px;
     font-size: 16px;
+  }
+
+  .wide {
+    width: 156px;
   }
 }
